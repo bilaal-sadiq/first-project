@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wedding Invites</title>
+</head>
+<body>
+  <h1>Wedding Invites</h1>
+  
+  <!-- Login Form -->
+  <div id="loginForm">
+    <h2>Login</h2>
+    <form id="login" method="POST">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required><br><br>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required><br><br>
+      
+      <input type="submit" value="Login">
+    </form>
+  </div>
+  
+  <!-- Wedding Invites -->
+  <div id="weddingInvites" style="display: none;">
+    <h2>Welcome to our Wedding!</h2>
+    <p>You are cordially invited to celebrate our special day.</p>
+    <p>Date: 20th July 2023</p>
+    <p>Location: Beautiful Venue, City</p>
+    <p>Please RSVP by 1st July 2023.</p>
+    <a href=""></a>
+  </div>
+  
+  <script>
+    // Check login credentials
+    document.getElementById("login").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent form submission
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+      
+      // Perform login validation (replace with your own logic)
+      if (username === "yourusername" && password === "yourpassword") {
+        document.getElementById("loginForm").style.display = "none"; // Hide login form
+        document.getElementById("weddingInvites").style.display = "block"; // Show wedding invites
+      } else {
+        alert("Invalid username or password. Please try again.");
+      }
+    });
+  </script>
+</body>
+</html>
