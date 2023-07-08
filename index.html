@@ -5,70 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <section>
       <nav>
-        <img src="/Assets/dashboard/FrontendS.png" alt="" />
+        <img src="./Assets/FES.svg" class="logo" alt="" />
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#discord">Discord</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </nav>
-      <ul>
-        <li><a href="About"></a></li>
-        <li><a href="Projects"></a></li>
-        <li><a href="Courses"></a></li>
-      </ul>
       <header>
-        <div>
-          <h1>Welcome to my Portfolio</h1>
-          <p>This is my portfolio and hope you enjoy</p>
+        <div class="row">
+          <div>
+            <h1>Best Place to learn Frontend</h1>
+            <p class="subheader">
+              Go from absolute beginner to pro with a simplified process
+            </p>
+            <button>Start now</button>
+          </div>
           <figure>
-            <img src="/Assets/laptop.png" alt="" />
+            <img src="./Assets/laptop.png" alt="Home page image" />
           </figure>
-          <button>Start</button>
         </div>
       </header>
     </section>
+
     <main>
-      <section>
+      <section id="about">
         <h2>About</h2>
         <div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
-            nulla harum eos temporibus facere rerum fugit ut quidem animi dolor!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
+            dicta!
           </p>
-          <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-      </section>
-      <section>
-        <h2>Discord</h2>
-        <div>
-          <p>Lorem5</p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, illo!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, sed.
           </p>
-          <p>Lorem10</p>
-          <figure>
-            <img src="/Assets/dashboard/discord.png" alt="" />
-          </figure>
+        </div>
+        <figure>
+          <img src="./Assets/about.jpg" alt="" />
+        </figure>
+      </section>
+
+      <section id="discord">
+        <h2>Discord</h2>
+        <figure>
+          <img src="./Assets/dashboard/discord.png" alt="Discord" />
+        </figure>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+            mollitia.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+            quia.
+          </p>
         </div>
       </section>
-      <section>
+
+      <section id="contact">
         <h2>Contact</h2>
-        <input type="text" />
-        <textarea name="text" id="" cols="30" rows="10"></textarea>
-        <button>Submit</button>
-        <form action=""></form>
+        <label for="">Email</label>
+        <form action="">
+          <input type="text" placeholder="bilal@example.com" />
+          <label for="">Message</label>
+          <textarea name="text" id="" cols="30" rows="10"></textarea>
+          <button>Submit</button>
+        </form>
       </section>
     </main>
-    <footer>
-      <img src="/Assets/dashboard/FrontendS.png" alt="" />
-      <div>
-        <a href="About"></a>
-        <a href="Projects"></a>
-        <a href="Discord"></a>
-        <a href="Courses"></a>
 
-        <p>Copyright</p>
+    <footer>
+      <img src="./Assets/FES.svg" alt="" />
+      <div>
+        <a href="#about">About</a>
+        <a href="#discord">Discord</a>
+        <a href="#contact">Contact</a>
+        <a href="#courses">Courses</a>
       </div>
+      <p>Copyright Frontend Simplefied</p>
     </footer>
   </body>
 </html>
